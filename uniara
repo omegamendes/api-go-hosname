@@ -1,0 +1,30 @@
+Título: Gerenciando seu cluster com Kubernetes.
+Palestrante: Matheus Rocha Mendes
+Empresa: s2it
+MiniCurrículo: Formado na Fatec e MBA em engenharia de Software orientada a serviços pela FIAP, com 10 anos de experiência,
+tendo atuado com a plataforma Java desde 2009. Certificado Java OCP e SCJD. Atualmente coordena 2 times de desenvolvimento na S2IT.
+Linkedin: https://www.linkedin.com/in/matheusrochamendes/
+
+
+
+
+0. Capa
+1. Introdução
+2. Sobre Mim
+3. Agenda
+4. Solução pra qual problema ?
+  4.1 Explicar estrutura de uma VM
+  4.2 Explicar a diferença de uma VM pra um container
+    4.2.1 Utilizar a analogia do avião de passageiros vs um foguete de satelite (livro k8s)
+5. Containers
+  5.1 Fragilidade dos containers
+  5.2 Gerenciamento de Containers
+6. Radar Thoughtworks
+7. Paper falando do borg
+8. Estrutura do k8s
+9
+
+kubectl run api-go --image=mrmendes/api-alpine-go:1.0 --port=8080
+kubectl expose deployment api-go --type="NodePort"
+kubectl scale deployment api-go --replicas=4
+curl http://$(minikube ip):[nodeport]
