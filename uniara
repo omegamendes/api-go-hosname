@@ -34,7 +34,7 @@ curl http://$(minikube ip):[nodeport]
 
 
 ghost example
-./kubectl run ghost --image=ghost --port=2368
+./kubectl run ghost --image=ghost:1.22.8 --port=2368
 ./kubectl expose deployment ghost --type="NodePort"
 
 bibliografia
